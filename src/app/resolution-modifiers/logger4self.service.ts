@@ -9,7 +9,7 @@ export class Logger4SelfService {
   constructor() { }
 
   log(message: string): void {
-    console.log(`[${message}] => last: [${this.lastMessage}]`);
+    console.log(`[Logger4SelfService] [${message}] => last: [${this.lastMessage}]`);
     this.lastMessage = message;
   }
 
