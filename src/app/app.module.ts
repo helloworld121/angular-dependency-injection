@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { ResolutionModifiersComponent } from './resolution-modifiers/resolution-modifiers.component';
 import {Logger4SelfService} from './resolution-modifiers/logger4self.service';
 import {Logger4SkipSelfService} from './resolution-modifiers/logger4skipself.service';
+import { DirectiveParentDirective } from './resolution-modifiers/directive-parent.directive';
+import { DirectiveChildDirective } from './resolution-modifiers/directive-child.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResolutionModifiersComponent
+    ResolutionModifiersComponent,
+    DirectiveParentDirective,
+    DirectiveChildDirective
   ],
   imports: [
     BrowserModule
