@@ -2,6 +2,7 @@ import {Component, OnInit, Optional, Self, SkipSelf} from '@angular/core';
 import {Logger4OptionalService} from './logger4optional.service';
 import {Logger4SelfService} from './logger4self.service';
 import {Logger4SkipSelfService} from './logger4skipself.service';
+import {Logger4HostService} from './logger4host.service';
 
 @Component({
   selector: 'app-resolution-modifiers',
@@ -10,6 +11,7 @@ import {Logger4SkipSelfService} from './logger4skipself.service';
   providers: [
     Logger4SelfService, // necessary for @Self()
     Logger4SkipSelfService, // necessary to show @SkipSelf()
+    // Logger4HostService
   ]
 })
 export class ResolutionModifiersComponent implements OnInit {
