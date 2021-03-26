@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ResolutionModifiersComponent } from './resolution-modifiers/resolution-modifiers.component';
+import {Logger4SelfService} from './resolution-modifiers/logger4self.service';
 
 @NgModule({
   declarations: [
@@ -15,4 +16,10 @@ import { ResolutionModifiersComponent } from './resolution-modifiers/resolution-
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(private logger4Self: Logger4SelfService) {
+    logger4Self.log('Hello from AppModule');
+  }
+
+}
